@@ -37,6 +37,11 @@ view: business {
     sql: ${TABLE}.latitude ;;
   }
 
+  dimension: location2 {
+    type:  number
+    sql: ${TABLE}.longitude ;;
+  }
+
   dimension: longitude {
     type: number
     sql: ${TABLE}.longitude ;;
