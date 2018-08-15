@@ -42,6 +42,12 @@ view: business {
     sql: ${TABLE}.longitude ;;
   }
 
+  dimension: location {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude} ;;
+  }
+
   dimension: neighborhoods {
     type: string
     sql: ${TABLE}.neighborhoods ;;
